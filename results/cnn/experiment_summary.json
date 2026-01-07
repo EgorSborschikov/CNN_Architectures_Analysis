@@ -1,0 +1,28 @@
+{
+  "experiment": "CNN Face Recognition",
+  "dataset": "LFW",
+  "date": "2026-01-07 14:42:46",
+  "device": "cpu",
+  "model": "EfficientFaceCNN",
+  "parameters": 882119,
+  "best_val_accuracy": 95.33678756476684,
+  "test_accuracy": 91.75257731958763,
+  "test_loss": 0.23529274503772074,
+  "training_epochs": 10,
+  "batch_size": 16,
+  "num_classes": 7,
+  "class_names": [
+    "Ariel Sharon",
+    "Colin Powell",
+    "Donald Rumsfeld",
+    "George W Bush",
+    "Gerhard Schroeder",
+    "Hugo Chavez",
+    "Tony Blair"
+  ],
+  "sample_counts": {
+    "train": 901,
+    "val": 193,
+    "test": 194
+  }
+}
