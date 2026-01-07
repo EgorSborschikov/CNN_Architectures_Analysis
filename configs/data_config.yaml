@@ -1,0 +1,23 @@
+datasets:
+  lfw:
+    path: "./data/raw/lfw"
+    min_faces_per_person: 70
+    resize: 0.4
+
+  celeba:
+    path: "./data/raw/celeba"
+    img_dir: "img_align_celeba"
+    attr_file: "identity_CelebA.txt"
+    crop_size: [178, 178]
+    target_size: [128, 128]
+  
+  vggface2:
+    path: "./data/raw/vggface2"
+    train_dir: "train"
+    test_dir: "test"
+
+data_splits:
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+  random_seed: 42

@@ -1,0 +1,27 @@
+model:
+  backbone: "resnet18"  
+  pretrained: true
+  dropout_rate: 0.5
+  num_classes: null
+
+training:
+  batch_size: 32
+  num_epochs: 30
+  learning_rate: 0.001
+  weight_decay: 1e-4
+  optimizer: "adamw"
+  scheduler: "plateau"
+
+  augmentation:
+    random_horizontal_flip: 0.5
+    random_rotation: 10
+    random_brightness: 0.2
+    random_contrast: 0.2
+  
+  early_stopping:
+    patience: 10
+    min_delta: 0.001
+
+evaluation:
+  metrics: ["accuracy", "precision", "recall", "f1", "confusion_matrix"]
+  save_predictions: true
